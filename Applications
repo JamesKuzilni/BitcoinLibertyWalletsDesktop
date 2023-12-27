@@ -36,14 +36,14 @@ install_application(filename)
 
 def download_and_install_tor_browser():
     # Replace the URL with the latest version's URL
-    url = "https://www.torproject.org/dist/torbrowser/13.0.5/tor-browser-linux-x86_64-13.0.5.tar.xz"
+    url = "https://www.torproject.org/dist/torbrowser/13.0.8/tor-browser-linux-x86_64-13.0.8.tar.xz"
     download_dir = os.path.expanduser('~/Downloads')
 
     # Use wget to download the Tor Browser
     subprocess.run(["wget", url], cwd=download_dir)
 
     # Extract the downloaded tar.xz file
-    tar_file = os.path.join(download_dir, "tor-browser-linux-x86_64-13.0.5.tar.xz")
+    tar_file = os.path.join(download_dir, "tor-browser-linux-x86_64-13.0.8.tar.xz")
     subprocess.run(["tar", "-xf", tar_file], cwd=download_dir)
 
     # Get the extracted folder name
